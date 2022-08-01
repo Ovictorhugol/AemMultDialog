@@ -1,0 +1,69 @@
+{
+  "project-settings": {
+    "code-owner": "React App",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "reactapp",
+    "model-interface-pkg": "com.reactapp.core.models",
+    "model-impl-pkg": "com.reactapp.core.models.impl"
+  },
+  "name": "container-content",
+  "title": "Container Content",
+  "group": "React App - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": ["request"],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "content",
+        "type": "multifield",
+        "label": "Content",
+        "model-name": "ContentModel",
+        "use-existing-model": false,
+        "json-expose": true,
+        "items": [
+          {
+            "field": "imageContent",
+            "type": "image",
+            "label": "Adicione uma imagem",
+            "json-expose": true,
+            "json-property": "imageContent"
+          },
+          {
+            "field": "titleError",
+            "type": "textfield",
+            "label": "Digite um titulo para o componente",
+            "json-expose": true,
+            "json-property": "titleError"
+          },
+          {
+            "field": "textError",
+            "type": "textarea",
+            "label": "Digite um texto para o componente",
+            "json-expose": true,
+            "json-property": "textError"
+          },
+          {
+            "field": "buttonText",
+            "type": "textfield",
+            "label": "Digite um texto para o botão",
+            "json-expose": true,
+            "json-property": "buttonText"
+          }
+        ]
+      }
+    ]
+  }
+}
